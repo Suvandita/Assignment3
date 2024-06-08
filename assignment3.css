@@ -1,0 +1,91 @@
+*{
+    margin:0; 
+    padding:0;
+}
+body{             
+    font-family:'Trebuchet MS';
+    background-color: rgb(221, 221, 221);
+    /*overflow: hidden;*/
+    
+    
+}
+/*Navigation bar*/
+.nav-bar{
+    display: flex;          
+    align-items: center;
+    gap:50px;
+    background-color: black;
+    padding:20px;
+    color:white;
+    position: fixed;
+    width: 100%;
+    z-index: 1; /*dropdown occurs only when this applied*/
+    
+}
+.nav-link-main{
+    font-size: 1.5em;
+}
+ul{
+    list-style-type: none;
+  }
+a{
+    text-decoration: none;
+    color:inherit;    /*for "my website" and nav bar items*/
+ }
+.dropbtn {
+    color: rgb(209, 203, 203);
+    padding:10px;
+  }
+.dropdown {
+    position: relative; /*parent*/
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;/*child--so that it can overlap the nav bar*/
+    margin: -5px;
+    background-color: white;
+    width: 100px;
+}
+.dropdown-content a {
+    color: black;
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+  
+.dropdown-content a:hover {
+    background-color: rgb(174, 171, 171);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    color: white;
+    cursor:pointer;
+}
+video{
+    width:100%;
+    height:100%;
+    margin-top: -90px;
+    
+}
+.vid{
+    position: relative;
+}
+.title-text
+{
+    background-color: rgb(90, 83, 83, 0.3); /*opacity*/
+    
+    color: white;
+    position: absolute;
+    top:300px;
+    left:50px;
+}
+.up_text{
+    margin-bottom: 20px;
+}
+.down_text{
+    font-size:4em;
+    margin-top: 20px;
+}
