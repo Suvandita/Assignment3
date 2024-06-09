@@ -11,25 +11,25 @@ body{
 .nav-bar{
     display: flex;          
     align-items: center;
-    gap:50px;
-    background-color: black;
-    padding:20px;
-    color:white;
+
     position: fixed;
+    z-index: 1; /*dropdown occurs only when this applied,stack order of an element*/
+
+    gap:50px;
+    padding:20px;
     width: 100%;
-    z-index: 1; /*dropdown occurs only when this applied*/
-    
+
+    background-color: black;
+    color:white;
 }
 .nav-link-main{
     font-size: 1.5em;
+    color: white;
 }
-ul{
-    list-style-type: none;
-  }
-a{
-    text-decoration: none;
-    color:inherit;    /*for "my website" and nav bar items*/
- }
+
+
+a{  text-decoration: none;}
+
 .dropbtn {
     color: rgb(209, 203, 203);
     padding:10px;
@@ -45,21 +45,22 @@ a{
     background-color: white;
     width: 100px;
 }
+ul{ 
+    list-style-type: none;
+}
 .dropdown-content a {
     color: black;
     display: block;
     padding: 10px 25px;
-    text-decoration: none;
 }
   
 .dropdown-content a:hover {
-    background-color: rgb(174, 171, 171);
+        background-color: rgb(174, 171, 171);
 }
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown:hover .dropbtn {
-    color: white;
+
+.dropdown:hover { 
+    .dropdown-content{display: block;}
+    .dropbtn{color: white;}
     cursor:pointer;
 }
 
@@ -67,9 +68,7 @@ a{
 video{
     height: 100%;
     width: 100%;
-    margin-top:-80px;
-    
-    
+    margin-top:-80px; 
 }
 .vid_body{
     position: relative;
