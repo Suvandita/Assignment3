@@ -66,16 +66,26 @@ ul{
 
 /*video component*/
 video{
-    height: 100%;
-    width: 100%;
-    margin-top:-80px; 
+    height:100vh;
+    width:100%;
+    object-fit: fill;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    
 }
 .vid_body{
     position: relative;
+    
+}
+.layer {
+    background-color: rgba(179, 178, 160, 0.3); /*opacity*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .title-text
 {
-    background-color: rgb(90, 83, 83, 0.3); /*opacity*/
     color: white;
     position: absolute;
     top:40%;
