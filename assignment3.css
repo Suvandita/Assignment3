@@ -1,6 +1,7 @@
 *{
     margin:0; 
     padding:0;
+    
 }
 body{             
     font-family:'Trebuchet MS';
@@ -30,15 +31,15 @@ body{
 
 a{  text-decoration: none;}
 
-.dropbtn {
+.dropbtn, .click_dropbtn {
     color: rgb(209, 203, 203);
     padding:10px;
   }
-.dropdown {
+.dropdown, .click_dropdown {
     position: relative; /*parent*/
    
 }
-.dropdown-content {
+.dropdown-content , .click_dropdown-content {
     display: none;
     position: absolute;/*child--so that it can overlap the nav bar*/
     margin: -5px;
@@ -48,14 +49,17 @@ a{  text-decoration: none;}
 ul{ 
     list-style-type: none;
 }
-.dropdown-content a {
+.dropdown-content a, .click_dropdown-content a {
     color: black;
     display: block;
     padding: 10px 25px;
 }
   
-.dropdown-content a:hover {
+.dropdown-content a:hover, .click_dropdown-content a:hover {
         background-color: rgb(174, 171, 171);
+}
+.click_dropdown{
+    cursor:pointer;
 }
 
 .dropdown:hover { 
@@ -69,7 +73,6 @@ video{
     height:100vh;
     width:100%;
     object-fit: fill;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
     
 }
 .vid_body{
